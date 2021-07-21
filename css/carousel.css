@@ -20,12 +20,15 @@ h2 {
 }
 
 .carrousel {
-  width: 100%;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  width: 94%;
   display: flex;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
-  padding: 10px 30px 10px 30px;
+  padding: 0px 20px 0px 20px;
   position: relative;
+  border-radius: 25px;
 }
 .carrousel .carousel__container {
   white-space: wrap;
