@@ -38,7 +38,6 @@ MediaPlayer.prototype.toggleMuteUnmuted = function() {
         this.media.unmuted = true;
     } else  {
         this.media.muted = true;
-        // this.media.unmuted = false;
     }
 }
 
