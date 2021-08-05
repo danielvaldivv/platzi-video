@@ -24,8 +24,8 @@ async function precache() {
     return cache.addAll([
         '/',
         '/reproductor.html',
-        '/assets/dist/index.js',
-        '/assets/dist/MediaPlayer.js',
+        '/assets/js/index.js',
+        '/assets/js/MediaPlayer.js',
         '/assets/plugins/AutoPlay.js',
         '/assets/plugins/AutoPause.js',
         '/css/index.css',
