@@ -14,3 +14,10 @@ const player = new MediaPlayer({
 buttonPlay.onclick = () =>  player.toggleRunStop();
 video.onclick = () =>  player.toggleRunStop();
 buttonSound.onclick = () => player.toggleMuteUnmuted();
+
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker. register('/sw.js').catch(error =>{
+        console.log(error.message);
+    })
+}
