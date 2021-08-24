@@ -1,8 +1,10 @@
 .carousel {
-  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: scroll;
   padding-left: 30px;
   width: 100%;
   position: relative;
+  margin: 20px 0px;
 }
 
 .carousel__container {
@@ -11,7 +13,7 @@
   transition: 450ms transform, 450ms -webkit-transform;
   font-size: 0;
   white-space: nowrap;
-  margin: 70px 0px;
+  margin: 50px 0px;
   padding-bottom: 10px;
 }
 
