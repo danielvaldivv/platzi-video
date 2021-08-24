@@ -45,12 +45,12 @@ module.exports = {
       filename: 'assets/[name].css',
     }),
   ],
-  // devServer: {
-  //   static: './dist',
-  //   port: 3006,
-  //   contentBase: path.join(__dirname, "dist"),
-  //   open: "chrome",
-  //   compress: true,
-  //   historyApiFallback: true,
-  // },
+  devServer: {
+    static: './dist',
+    port: 3006,
+    contentBase: path.join(__dirname, "dist"),
+    open: "chrome",
+    compress: true,
+    historyApiFallback: true,
+  }, // Debugging, instructions of webpack.js.org
 }
