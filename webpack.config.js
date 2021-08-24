@@ -11,7 +11,6 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
-  watch: true,
   module: {
     rules: [
       {
@@ -46,11 +45,12 @@ module.exports = {
       filename: 'assets/[name].css',
     }),
   ],
-  devServer: {
-    port: 3006,
-    contentBase: path.join(__dirname, "dist"),
-    open: "chrome",
-    compress: true,
-    historyApiFallback: true,
-  }
+  // devServer: {
+  //   static: './dist',
+  //   port: 3006,
+  //   contentBase: path.join(__dirname, "dist"),
+  //   open: "chrome",
+  //   compress: true,
+  //   historyApiFallback: true,
+  // },
 }
