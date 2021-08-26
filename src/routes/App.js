@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch,Router } from 'react-router-dom';
 import Home from '../containers/Home';
 import Login from '../containers/Login';
 
 const App = () => (
-  <BrowserRouter>
+  <Router>
     <Switch>
       <Route exact path="/">
         <Home/>
@@ -14,7 +14,7 @@ const App = () => (
         <Login/>
       </Route>
     </Switch>
-</BrowserRouter>
+</Router>
 
 );
 
