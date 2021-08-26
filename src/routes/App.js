@@ -8,8 +8,7 @@ import Login from '../containers/Login';
 const history = createBrowserHistory();
 
 const App = () => (
-<Router history={history}> 
-  <History>
+<Router history={history}>
     <Switch>
       <Route path="/">
         <Home />
@@ -19,7 +18,6 @@ const App = () => (
         <Login />
       </Route>
     </Switch>
-  </History>
 </Router>
 
 );
