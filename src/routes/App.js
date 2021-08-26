@@ -6,11 +6,11 @@ import Login from '../containers/Login';
 const App = () => (
   <Router>
     <Switch>
-      <Route exact path="/">
+      <Route path="/">
         <Home/>
       </Route>
 
-      <Route exact path="/login">
+      <Route path="/login">
         <Login/>
       </Route>
     </Switch>
