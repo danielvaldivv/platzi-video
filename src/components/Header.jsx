@@ -1,5 +1,6 @@
 import React from "react";
 import '../assets/styles/components/Header.scss'
+import { Link } from "react-router-dom";
 
 import logo from '../assets/static/logo-platzi-video-BW2.png'
 import userIcon from '../assets/static/user-icon.png'
@@ -13,7 +14,7 @@ const Header = () => (
         <p>Perfil</p>
       </div>
       <ul>
-        <li><a href="/login">Cuenta</a></li>
+        <li><Link to="/login">LOGIN</Link></li>
         <li><a href="/">Cerrar Sesión</a></li>
       </ul>
     </div>
