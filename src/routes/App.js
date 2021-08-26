@@ -7,17 +7,23 @@ import { createBrowserHistory } from 'history';
 // const history = createBrowserHistory();
 
 const App = () => (
-  <BrowserRouter>
-  {/* <Layout> */}
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/login" component={Login} />
-      {/* <Route exact path="/register" component={Register} /> */}
-      {/* <Route exact path="/player/:id" component={Player} /> */}
-      {/* <Route component={NotFound} /> */}
-    </Switch>
-  {/* </Layout> */}
-</BrowserRouter>
+//   <BrowserRouter>
+//     <Switch>
+//       <Route exact path="/" component={Home} />
+//       <Route exact path="/login" component={Login} />
+//     </Switch>
+// </BrowserRouter>
+
+<Router>
+  <Switch>
+    <Route path="/" >
+      <Home />
+    </Route>
+    <Route path="/login">
+      <Login />
+    </Route>
+  </Switch>
+</Router>
 );
 
 export default App;
