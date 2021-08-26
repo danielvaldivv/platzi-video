@@ -4,15 +4,15 @@ import Home from '../containers/Home';
 import Login from '../containers/Login';
 
 import { createBrowserHistory } from 'history';
-const history = createBrowserHistory();
+// const history = createBrowserHistory();
 
 const App = () => (
-  <RouterRouter>
+  <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/login" component={Login} />
     </Switch>
-  </RouterRouter>
+  </BrowserRouter>
 );
 
 export default App;
