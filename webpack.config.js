@@ -55,11 +55,10 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: './dist',
-    port: 3006,
-    contentBase: path.join(__dirname, "dist"),
-    open: "chrome",
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    port: 9000,
     compress: true,
-    historyApiFallback: true,
   }, // Debugging, instructions of webpack.js.org
 }
