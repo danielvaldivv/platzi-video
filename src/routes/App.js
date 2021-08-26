@@ -7,12 +7,12 @@ import { createBrowserHistory } from 'history';
 const history = createBrowserHistory();
 
 const App = () => (
-  <Router history={history}>
+  <RouterRouter>
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/login" component={Login} />
     </Switch>
-  </Router>
+  </RouterRouter>
 );
 
 export default App;
