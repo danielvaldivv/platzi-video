@@ -8,11 +8,11 @@ const App = () => (
   <Router>
     <Switch>
       <Route path="/">
-        <Home/>
+        <Home />
       </Route>
 
       <Route path="/login">
-        <Login/>
+        <Login />
       </Route>
     </Switch>
 </Router>
