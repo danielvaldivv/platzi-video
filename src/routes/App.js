@@ -1,19 +1,20 @@
 import React from 'react';
-import { BrowserRouter, Route, Router, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from '../containers/Home';
 import Login from '../containers/Login';
-
-import { createBrowserHistory } from 'history';
-// const history = createBrowserHistory();
 
 const App = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/login" component={Login} />
+      <Route exact path="/">
+        <Home/>
+      </Route>
+
+      <Route exact path="/login">
+        <Login/>
+      </Route>
     </Switch>
 </BrowserRouter>
-
 
 );
 
