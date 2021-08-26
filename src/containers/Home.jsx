@@ -12,6 +12,7 @@ const API = 'http://localhost:3000/initalState';
 import '../assets/styles/App.scss';
 
 const Home = () => {
+  console.log('hihi')
   const initialState = useInitialState(API)
 
   return initialState.length === 0
