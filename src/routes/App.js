@@ -5,8 +5,10 @@ import Login from '../containers/Login';
 
 const App = () => (
   <BrowserRouter>
+    <switch>
     <Route exact path="/" component={Home} />
     <Route exact path="/login" component={Login} />
+    </switch>
   </BrowserRouter>
 );
 
