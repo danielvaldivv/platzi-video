@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import { createBrowserHistory } from 'history';
+import { BrowserRouter as Router, Route, Switch, useHistory} from 'react-router-dom';
+// import { createBrowserHistory } from 'history';
 
 import Home from '../containers/Home';
 import Login from '../containers/Login';
 
-const history = createBrowserHistory();
+const history = useHistory();
 
 const App = () => (
 <Router history={history}>
