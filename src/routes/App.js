@@ -6,15 +6,17 @@ import Login from '../containers/Login';
 
 const App = () => (
   <Router>
-    <Switch>
-      <Route path="/">
-        <Home />
-      </Route>
+    <History>
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
 
-      <Route path="/login">
-        <Login />
-      </Route>
-    </Switch>
+        <Route path="/login">
+          <Login />
+        </Route>
+      </Switch>
+    </History>
 </Router>
 
 );
