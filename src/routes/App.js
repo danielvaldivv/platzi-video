@@ -8,12 +8,8 @@ import Login from '../containers/Login';
 const App = () => (
 <Router>
   <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
+    <Route exact path="/" component={Home} />
+    <Route path="/login" component={Login} />
   </Switch>
 </Router>
 )
