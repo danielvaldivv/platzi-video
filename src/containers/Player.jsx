@@ -6,7 +6,7 @@ import '../assets/styles/components/Player.scss'
 
 const Player = props => {
   const { id } = props.match.params;
-  const hasPlaying = playing ? Object.keys(props.playing).length > 0 : false;
+  const hasPlaying =  Object.keys(props.playing).length > 0 ;
 
   useEffect(() => {
     props.getVideoSource(id);
@@ -34,10 +34,8 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = () => {
-  return{
+const mapDispatchToProps = {
     getVideoSource
-  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Player);
