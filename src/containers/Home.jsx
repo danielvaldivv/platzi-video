@@ -18,8 +18,7 @@ const Home = () => {
   return initialState.length === 0
   ? <h1>Loading...</h1>
   : (
-    <div className="App" >
-      <Header />
+    <React.Fragment >
       <Search />
       {
         initialState.mylist.length > 0 &&
@@ -54,8 +53,7 @@ const Home = () => {
           </Carousel>
       </Categories>
 
-      <Footer />
-    </div>
+    </React.Fragment>
   );
 };
 
