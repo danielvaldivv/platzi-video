@@ -7,15 +7,15 @@ import Login from '../containers/Login';
 
 const App = () => (
 <Router >
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
+  <Switch>
+    <Route exact path="/">
+      <Home />
+    </Route>
 
-      <Route path="/login">
-        <Login />
-      </Route>
-    </Switch>
+    <Route path="/login">
+      <Login />
+    </Route>
+        </Switch>
 </Router>
 
 );
