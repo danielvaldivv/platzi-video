@@ -47,7 +47,7 @@ const Header = props => {
                 </a>
               </li>
             : <li>
-                <Link to="/#login">
+                <Link to="/login">
                   Iniciar sesión
                 </Link>
               </li>
