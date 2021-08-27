@@ -42,7 +42,7 @@ const Login = () => {
             name="password"
             className="input"
             type="password"
-            placeholder="Contraseña"}
+            placeholder="Contraseña"
             onChange="{handleInput}"
           />
 
