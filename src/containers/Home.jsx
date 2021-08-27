@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { connect } from 'react-redux'
+
+import Header from "../components/Header";
 import Search from "../components/Search";
 import Categories from "../components/Categories";
 import Carousel from "../components/Carousel";
@@ -12,6 +14,7 @@ const Home = ({myList, trends, originals}) => {
 
   return (
     <React.Fragment >
+      <Header/>
       <Search />
       {
         myList.length > 0 &&

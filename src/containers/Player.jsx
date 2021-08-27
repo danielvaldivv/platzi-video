@@ -25,7 +25,7 @@ const Player = props => {
       </div>
     )
   : <NotFound/>
-  
+
 };
 
 const mapStateToProps = state => {
@@ -35,7 +35,7 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = {
-    getVideoSource
+  getVideoSource
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Player);
