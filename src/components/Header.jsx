@@ -20,7 +20,7 @@ const Header = props => {
 
       <div className="header__menu">
         <div className="header__menu--profile">
-          
+
           { hasUser
             ?  <img src={gravatar(user.email)} alt={user.email} />
             : <img src={ userIcon } alt="User Icono" />
@@ -44,4 +44,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default (mapStateToProps, null) (Header)
+export default connect(mapStateToProps, null) (Header)
