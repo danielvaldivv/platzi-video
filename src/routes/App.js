@@ -1,17 +1,17 @@
 import React from 'react';
-import { BrowserRouter , Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import Home from '../containers/Home';
 import Login from '../containers/Login';
 
 
 const App = () => (
-<BrowserRouter>
-  {/* <Switch> */}
+<Router>
+  <Switch>
     <Route exact path="/" component={Home} />
     <Route exact path="/login" component={Login} />
-  {/* </Switch> */}
-</BrowserRouter>
+  </Switch>
+</Router>
 )
 ;
 
