@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, useHistory} from 'react-router-
 
 import Home from '../containers/Home';
 import Login from '../containers/Login';
+import Register from '../containers/Register';
 
 
 const App = () => (
@@ -10,6 +11,7 @@ const App = () => (
   <Switch>
     <Route exact path="/" component={Home} />
     <Route exact path="/login" component={Login} />
+    <Route exact path ="/register" component={Register} />
   </Switch>
 </Router>
 )
