@@ -12,20 +12,20 @@ const Player = props => {
     props.getVideoSource(id);
   }, []);
 
-  return (hasPlaying
+  return hasPlaying
     ? ( <div className="Player">
-          <video controls autoPlay>
-            <source src={props.playing.source} type="video/mp4" />
-          </video>
-          <div className="Player-back">
-            <button type="button" onClick={() => props.history.goBack()}>
-              Regresar
-            </button>
-          </div>
+        <video controls autoPlay>
+          <source src={props.playing.source} type="video/mp4" />
+        </video>
+        <div className="Player-back">
+          <button type="button" onClick={() => props.history.goBack()}>
+            Regresar
+          </button>
         </div>
-      )
-    : <NotFound/>
-  )
+      </div>
+    )
+  : <NotFound/>
+  
 };
 
 const mapStateToProps = state => {
