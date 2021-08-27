@@ -6,7 +6,7 @@ import '../assets/styles/components/Player.scss'
 
 const Player = props => {
   const { id } = props.match.params;
-  const hasPlaying = Object.keys(props.playing).length > 0;
+  const hasPlaying = playing ? Object.keys(props.playing).length > 0 : false;
 
   useEffect(() => {
     props.getVideoSource(id);
