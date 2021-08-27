@@ -18,7 +18,7 @@ const Header = props => {
     props.logoutRequest({})
   }
 
-  const headerClass = className('header', {
+  const headerClass = classNames('header', {
     isLogin,
     isRegister,
   })
