@@ -36,14 +36,14 @@ const Login = () => {
             className="input"
             type="text"
             placeholder="Correo"
-            onChange="{handleInput}"
+            onChange={handleInput}
           />
           <input
             name="password"
             className="input"
             type="password"
             placeholder="Contraseña"
-            onChange="{handleInput}"
+            onChange={handleInput}
           />
 
           <button className="button">Iniciar sesión</button>
