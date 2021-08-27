@@ -9,7 +9,7 @@ const App = () => (
 <Router>
   <Switch>
     <Route exact path="/" component={Home} />
-    <Route exact path={useHistory.push("/login")} component={Login} />
+    <Route exact path="/login" component={Login} />
   </Switch>
 </Router>
 )
