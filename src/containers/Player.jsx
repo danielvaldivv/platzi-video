@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import   NotFound   from "../containers/NotFound";
-import  getVideoSource  from "../actions";
+import  { getVideoSource }  from "../actions";
 import '../assets/styles/components/Player.scss'
 
 const Player = props => {
@@ -34,8 +34,10 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = {
-  getVideoSource,
+const mapDispatchToProps = () => {
+  return{
+    getVideoSource
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Player);
