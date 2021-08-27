@@ -12,10 +12,10 @@ const App = () => (
       <Home />
     </Route>
 
-    <Route path="/login">
-      <Login />
-    </Route>
-        </Switch>
+      <Route path="/login">
+        <Login />
+      </Route>
+  </Switch>
 </Router>
 
 );
