@@ -33,7 +33,7 @@ const CarouselItem = (props) => {
               src={playIcon}
               alt="Play Icon"
             />
-            </Link>
+          </Link>
 
           {isList
           ? <img
